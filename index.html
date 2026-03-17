@@ -1,81 +1,114 @@
-<section class="hero">
-
-<h1 class="hero-title">MQ Enterprises</h1>
-
-<h2 class="hero-subtitle">Premium Uniform Manufacturer Since 2013</h2>
-
-<p class="hero-text">
-Supplying uniforms, hospitality accessories and animal hides across India and international markets.
-</p>
-
-<a href="#quote" class="hero-btn">Get a Quote</a>
-
-</section>
-
+}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MQ Enterprises</title>
 <style>
 
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
+body{font-family:Arial;margin:0;background:#f5f7fb}
+
+header{
+background:#0A2540;
 color:white;
-background:linear-gradient(-45deg,#0A2540,#1b4f8a,#0A2540,#2d7ff9);
-background-size:400% 400%;
-animation:gradientMove 10s ease infinite;
+display:flex;
+justify-content:space-between;
 padding:20px;
 }
 
-.hero-title{
-font-size:60px;
-margin:10px;
-animation:fadeUp 1.5s ease;
-}
-
-.hero-subtitle{
-font-size:30px;
-margin-bottom:10px;
-animation:fadeUp 2s ease;
-}
-
-.hero-text{
-max-width:600px;
-opacity:0.9;
-animation:fadeUp 2.5s ease;
-}
-
-.hero-btn{
-margin-top:30px;
-padding:15px 35px;
-background:#d4af37;
-color:black;
-font-weight:bold;
+nav a{
+color:white;
+margin-left:20px;
 text-decoration:none;
-border-radius:6px;
+}
+
+.hero{
+background:#2d7ff9;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.divisions{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px;
+}
+
+.card{
+background:white;
+padding:40px;
+width:250px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+cursor:pointer;
 transition:0.3s;
 }
 
-.hero-btn:hover{
-transform:scale(1.1);
+.card:hover{
+transform:scale(1.05);
 }
 
-@keyframes gradientMove{
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+footer{
+background:#0A2540;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
+</head>
+
+<body>
+
+<header>
+
+<h2>MQ Enterprises</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="uniforms.html">Uniforms</a>
+<a href="hospitality.html">Hospitality</a>
+<a href="hides.html">Animal Hides</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Premium Manufacturer Since 2013</h1>
+
+<p>
+Uniforms • Hospitality Supplies • Animal Hides
+</p>
+
+</section>
+
+<section class="divisions">
+
+<div class="card" onclick="location.href='uniforms.html'">
+<h3>Uniforms</h3>
+<p>Hotel, hospital, corporate and industrial uniforms</p>
+</div>
+
+<div class="card" onclick="location.href='hospitality.html'">
+<h3>Hospitality Supplies</h3>
+<p>Towels, slippers, napkins and accessories</p>
+</div>
+
+<div class="card" onclick="location.href='hides.html'">
+<h3>Animal Hides</h3>
+<p>High quality hides for export</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 MQ Enterprises</p>
+
+</footer>
+
+</body>
+</html
